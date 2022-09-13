@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabs with accessibility</title>
+  </head>
+  <body>
+    <div class="tabs">
+      <div
+        role="tablist"
+        aria-label="tabs component"
+        class="tabs-btn-container"
+      >
+        <button
+          role="tab"
+          aria-controls="panel-1"
+          id="tab-1"
+          type="button"
+          aria-selected="true"
+          tabindex="0"
+          class="tab active-tab"
+        >
+          Rocket 🚀
+        </button>
+        <button
+          role="tab"
+          aria-controls="panel-2"
+          id="tab-2"
+          type="button"
+          aria-selected="false"
+          tabindex="-1"
+          class="tab"
+        >
+          Science 🧪
+        </button>
+        <button
+          role="tab"
+          aria-controls="panel-3"
+          id="tab-3"
+          type="button"
+          aria-selected="false"
+          tabindex="-1"
+          class="tab"
+        >
+          Food 🍉
+        </button>
+      </div>
+
+      <div
+        id="panel-1"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-1"
+        class="tab-content active-tab-content"
+      >
+        <h3>Rocket 🚀</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+          delectus, dolores quod similique iste at ad, saepe eum quae officia
+          accusantium recusandae quia enim magnam doloremque perspiciatis. In
+          laudantium nemo rerum quaerat cumque qui, optio doloremque, a
+          consequuntur provident repudiandae! Nemo perspiciatis numquam,
+          suscipit doloremque sapiente et? Neque, impedit doloribus?
+        </p>
+      </div>
+
+      <div
+        id="panel-2"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-2"
+        class="tab-content"
+      >
+        <h3>Science 🧪</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+          voluptas quo impedit suscipit molestias eligendi sint fuga repudiandae
+          minima commodi ab? Beatae esse sapiente commodi quisquam cum? Incidunt
+          nulla, iure dignissimos itaque non ab et perspiciatis fuga atque
+          voluptas. Saepe labore voluptatem reprehenderit nesciunt consectetur
+          nulla accusantium quas architecto quasi.
+        </p>
+      </div>
+
+      <div
+        id="panel-3"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-3"
+        class="tab-content"
+      >
+        <h3>Food 🍉</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          voluptate sint doloribus fugiat. Quisquam nesciunt in, reiciendis
+          harum, consequatur ullam blanditiis laudantium sequi, accusamus id vel
+          cupiditate ut. Dicta error itaque minus harum quia ipsum commodi
+          maiores labore voluptatem, modi sunt eligendi rerum similique
+          accusantium explicabo dolorem voluptatibus nam tempora.
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
