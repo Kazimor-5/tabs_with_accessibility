@@ -26,7 +26,7 @@ const tabsAnimation = (e) => {
 
 tabs.forEach((tab) => tab.addEventListener('click', tabsAnimation));
 
-// * Naviagation dans les onglets avec le clavier
+// * Navigation dans les onglets avec le clavier
 let tabFocus = 0;
 
 const arrowNavigation = (e) => {
